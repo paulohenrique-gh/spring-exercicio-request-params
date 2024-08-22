@@ -1,6 +1,5 @@
 package org.example.exercicioapirequestparams.controllers;
 
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.example.exercicioapirequestparams.model.Employee;
 import org.example.exercicioapirequestparams.services.EmployeeService;
