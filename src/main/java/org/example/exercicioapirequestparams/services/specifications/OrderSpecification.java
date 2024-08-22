@@ -49,11 +49,11 @@ public class OrderSpecification {
             if (startDate == null && endDate == null) return null;
 
             if (startDate != null && endDate != null) {
-                return criteriaBuilder.between(root.get("date"), startDate, endDate);
+                return criteriaBuilder.between(root.get("orderDate"), startDate, endDate);
             } else if (startDate != null) {
-                return criteriaBuilder.greaterThanOrEqualTo(root.get("date"), startDate);
+                return criteriaBuilder.greaterThanOrEqualTo(root.get("orderDate"), startDate);
             } else {
-                return criteriaBuilder.lessThanOrEqualTo(root.get("date"), endDate);
+                return criteriaBuilder.lessThanOrEqualTo(root.get("orderDate"), endDate);
             }
         };
     }
