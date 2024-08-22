@@ -16,7 +16,7 @@ public class EmployeeService {
 
     private final EmployeeRepository employeeRepository;
 
-    public List<Employee> getEmployees(String firstName, String department, Double minSalary, LocalDate hiredAfter, LocalDate hiredBefore, Boolean active) {
+    public List<Employee> findEmployees(String firstName, String department, Double minSalary, LocalDate hiredAfter, LocalDate hiredBefore, Boolean active) {
         Specification<Employee> spec = Specification
                 .where(EmployeeSpecification.hasFirstName(firstName))
                 .and(EmployeeSpecification.hasDepartment(department))
