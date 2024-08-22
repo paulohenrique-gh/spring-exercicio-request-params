@@ -16,7 +16,7 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
 
-    public List<Order> getOrders(Long orderNumber,
+    public List<Order> findOrders(Long orderNumber,
             String customerName,
             String status,
             Integer minAmount,
