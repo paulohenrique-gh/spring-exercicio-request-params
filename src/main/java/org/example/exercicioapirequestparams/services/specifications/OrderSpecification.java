@@ -18,7 +18,7 @@ public class OrderSpecification {
         return (root, query, criteriaBuilder) -> {
             if (customerName == null) return null;
 
-            return criteriaBuilder.like(criteriaBuilder.lower(root.get("")), "%" + customerName.toLowerCase() + "%");
+            return criteriaBuilder.like(criteriaBuilder.lower(root.get("customerName")), "%" + customerName.toLowerCase() + "%");
         };
     }
 
